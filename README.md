@@ -69,7 +69,7 @@ The server is built using Go and provides a REST API to handle game moves. It li
 2. Open a terminal or command prompt and run the following command:
 
    ```bash
-   go run main.go
+   go run server.go
    ```
 
    The server will start, and you should see the message `Server running on :8080`.
@@ -105,7 +105,7 @@ The Windows client is a C++ application that communicates with the Go server to 
 
 ### Web Server (Go)
 
-- `main.go`: The main file that contains the server logic and handles game moves.
+- `server.go`: The main file that contains the server logic and handles game moves.
 
 ### Windows Client (C++)
 
