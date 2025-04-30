@@ -32,6 +32,12 @@ This repository contains a simple Tic-Tac-Toe game implemented in C++ and Go, fe
    ```bash
    go run server.go
    ```
+2. **Run the ./tictactoe**:
+   - Run this on terminal.
+   
+   ```bash
+   ./tictactoe
+   ```
 
 3. **Play the Game**:
    - After starting the server and compiling the client, run the `tictactoe` executable on your Windows machine to launch the graphical interface.
