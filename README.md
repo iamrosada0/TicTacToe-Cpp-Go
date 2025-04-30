@@ -58,8 +58,6 @@ g++ -I/mingw64/include -L/mingw64/lib tictactoe.cpp -ltbb12 -lgdi32 -lwininet -o
 After running the above command, the `tictactoe` executable will be generated. You can now run the compiled program.
 
 ---
-
-This section provides a detailed explanation on how to compile the Tic-Tac-Toe game, which uses specific libraries and paths. If you have any questions or issues during the compilation, make sure that the necessary libraries are installed and the paths are correctly set.
 ## Running the Project
 
 ### 1. Run the Web Server
