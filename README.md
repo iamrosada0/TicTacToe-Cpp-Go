@@ -36,6 +36,9 @@ This repository contains a simple Tic-Tac-Toe game implemented in C++ and Go, fe
 3. **Play the Game**:
    - After starting the server and compiling the client, run the `tictactoe` executable on your Windows machine to launch the graphical interface.
    - You can make moves by clicking on the grid in the GUI, which will communicate with the Go server to update the game state.
+<img width="196" alt="image" src="https://github.com/user-attachments/assets/f306e3be-71f8-47b0-a4a4-a268846f2def" />
+<img width="188" alt="image" src="https://github.com/user-attachments/assets/315543d3-a97c-4dd8-91f3-8074db84d59e" />
+
 
 ### License:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
