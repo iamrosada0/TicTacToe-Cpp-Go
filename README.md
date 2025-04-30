@@ -13,7 +13,53 @@ Before running the project, ensure you have the following tools and libraries in
 ### For the Windows Client (C++):
 - [TBB (Threading Building Blocks)](https://www.intel.com/content/www/us/en/programmable/tbb.html)
 - A C++ compiler that supports WinAPI (such as Microsoft Visual Studio)
+Certainly! Below is an updated section for the README that explains how to compile the C++ program using the `g++` command and the necessary libraries.
 
+---
+
+## Compilation Instructions
+
+To compile the C++ Tic-Tac-Toe game, you need to use the `g++` compiler with specific libraries and paths. Below is the command to compile the program:
+
+### Steps:
+
+1. Ensure you have MinGW-w64 and the necessary libraries installed, such as TBB, GDI32, and WinINet. These are required for compiling the project.
+
+2. Run the following `g++` command to compile the source code:
+
+   ```bash
+   g++ -I/mingw64/include -L/mingw64/lib tictactoe.cpp -ltbb12 -lgdi32 -lwininet -o tictactoe
+   ```
+
+   ### Explanation of the command:
+
+   - **`g++`**: The GNU C++ compiler used for compiling C++ source files.
+   
+   - **`-I/mingw64/include`**: Specifies the directory for header files (`/mingw64/include`). This is necessary for finding external libraries such as TBB and WinINet.
+   
+   - **`-L/mingw64/lib`**: Specifies the directory for libraries (`/mingw64/lib`). This tells the linker where to look for `.lib` or `.dll` files when linking.
+   
+   - **`tictactoe.cpp`**: The C++ source code file that contains the implementation of the Tic-Tac-Toe game.
+   
+   - **`-ltbb12`**: Links the Intel Threading Building Blocks (TBB) library. This is used for parallel computing tasks in the application.
+   
+   - **`-lgdi32`**: Links the GDI32 library. It is part of the Windows API used for rendering graphics (e.g., drawing the Tic-Tac-Toe grid).
+   
+   - **`-lwininet`**: Links the WinINet library, used for making HTTP requests, which is essential for the communication between the client and server in the game.
+   
+   - **`-o tictactoe`**: Specifies the output filename. The compiled executable will be named `tictactoe`.
+
+### Example Command:
+
+```bash
+g++ -I/mingw64/include -L/mingw64/lib tictactoe.cpp -ltbb12 -lgdi32 -lwininet -o tictactoe
+```
+
+After running the above command, the `tictactoe` executable will be generated. You can now run the compiled program.
+
+---
+
+This section provides a detailed explanation on how to compile the Tic-Tac-Toe game, which uses specific libraries and paths. If you have any questions or issues during the compilation, make sure that the necessary libraries are installed and the paths are correctly set.
 ## Running the Project
 
 ### 1. Run the Web Server
@@ -78,7 +124,3 @@ The Windows client is a C++ application that communicates with the Go server to 
 ## License
 
 This project is open-source under the [MIT License](LICENSE).
-
----
-
-This README covers the necessary instructions for both the Go-based web server and the C++ Windows client, providing a clear guide on how to run and interact with the project.
